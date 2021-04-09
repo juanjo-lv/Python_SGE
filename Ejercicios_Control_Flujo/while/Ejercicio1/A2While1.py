@@ -4,5 +4,6 @@ while mod == "":
     print("Valor booleano ",bool(si_teclean))
     if si_teclean:
         mod ="1"
+        print("has tecleado, hasta luego")
     else:
         print("Por favor tecleen")
