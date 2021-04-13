@@ -17,4 +17,6 @@ def ejemplo4b():
     lista_dada = [1,2,3,4]; print ('lista_dada\n',lista_dada)
     lista_octal = [oct(elem) for elem in range(0,len(lista_dada))]
     print(lista_octal)
+def ejemplo4c():
+    #a partir de una lista con nombres. Visualiza un saludo para cada elemento    
 
