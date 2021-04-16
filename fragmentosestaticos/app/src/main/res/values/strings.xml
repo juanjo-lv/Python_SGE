@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">fragmentosestaticos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="green">Este es el fragmento verde</string>
+    <string name="red">Este es el fragmento rojo</string>
+</resources>
