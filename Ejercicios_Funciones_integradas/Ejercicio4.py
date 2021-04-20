@@ -3,4 +3,8 @@
 
 tup1 = (1,2,3)
 tup2 = (3,4,5)
+
 print(tuple(zip(tup1,tup2)))
+
+tup3 = ("rojo","azul","verde","amarillo","magenta","zian")
+print(tuple(enumerate(tup3)))
