@@ -1,8 +1,8 @@
 '''
-Escribir un programa que reciba una cadena de caracteres y devuelva un diccionario con cada palabra que contiene 
-y su frecuencia. 
-Escribir otra función que reciba el diccionario generado con la función anterior y 
-devuelva una tupla con la palabra más repetida y su frecuencia.
+Programa que tiene un menu y que nos da a elegir 3 opciones
+    1- ejecutar una funcion al que le pasamos palabras separadas por espacio y crea un diccionario contando cuantas veces se repite
+    2- ejecutar una funcion que llama a la primera funcion y devuelve una tupla con el valor más repetido y las veces que se repite
+    3- ejecutar una función que al pasarle una cantidad y te lo devuelve en monedas de valor 5, 2 y 1 
 
 '''
 def contar_palabras(texto):
@@ -30,10 +30,10 @@ def repetidas(palabras):
     return num_palabra, freq_palabra
 
 def devolvermonedas():
-    monedas = [5, 2, 1]
+    monedas = [2, 1, 0.5]
     cambio = [0, 0, 0]
     
-    cantidad = int(input("Introduce una cantidad entera de euros: "))
+    cantidad = float(input("Introduce una cantidad entera de euros: "))
     print('Para sumar', cantidad, '€ se necesitan ', end='')
     for i in range(len(monedas)):   
         while cantidad >= monedas[i]:
