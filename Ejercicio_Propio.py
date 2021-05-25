@@ -29,6 +29,38 @@ def repetidas(palabras):
             freq_palabra = freq
     return num_palabra, freq_palabra
 
-texto = str(input("Escribe el texto que quieres comprobar"))
-print(contar_palabras(texto))
-print(repetidas(contar_palabras(texto)))
+def devolvermonedas():
+    monedas = [5, 2, 1]
+    cambio = [0, 0, 0]
+    
+    cantidad = int(input("Introduce una cantidad entera de euros: "))
+    print('Para sumar', cantidad, '€ se necesitan ', end='')
+    for i in range(len(monedas)):   
+        while cantidad >= monedas[i]:
+            cantidad -= monedas[i]
+            cambio[i] += 1   
+    print(sum(cambio), 'monedas:')  
+    for i in range(len(monedas)):
+        print(cambio[i], 'monedas de ', monedas[i], '€')
+
+#Ejecución del programa
+
+salir = False
+while not salir:
+    respuesta = input("Elige una opción : \n 1) contar palabras \n 2) contar palabras repetidas \n 3) contar monedas \n 4) salir \n")
+    
+    if(respuesta=="1"):
+        texto = str(input("Escribe el texto que quieres comprobar"))
+        print(contar_palabras(texto))
+    elif(respuesta=="2"):
+        texto = str(input("Escribe el texto que quieres comprobar"))  
+        print(repetidas(contar_palabras(texto))) 
+    elif(respuesta=="3"):
+        devolvermonedas()
+    elif(respuesta=="4"):
+        salir = True 
+print("Adiós")    
+    
+
+
+
